@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Satisfy&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Satisfy&family=Sevillana&family=Tangerine:wght@400;700&display=swap');
+
+:root{
+    --color:#0000;
+}
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family:'Merriweather',sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+/* -------nav-bar----------------- */
+nav{
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:20px;
+    padding-right: 20px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: --second-color;
+}
+li:hover{
+    color: --main-color;
+    text-decoration: underline;
+}
+nav .logo{
+    color: --main-color;
+    font-size: 54px;
+    padding-right: 15%;
+    font-family: 'Dancing Script', sans-serif;
+}
+nav .icons{
+    font-size: 18px;
+    color: --main-color;
+    padding-right: 10px;
+}
+nav .icons i{
+    padding-right: 10px;
+}
+
+/* -------------Home----------------- */
+.Home{
+    /* background-image: url(images/background1.jpg) ;
+    background-size: cover; */
+    background-color: #f1d3ab;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Home p{
+    color: #ffff;
+    font-weight: 300;
+    font-size: 125px;
+    font-family: 'Tangerine';
+}
+.Home a{
+    color: #ffff;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+/* -------------Shop----------------- */
+.shop{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.shop .type{
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+}
+.type .image{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border:1px solid #F0EBE3;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+} 
+.type a{
+    
+    text-decoration: underline;
+    color: black;
+    font-size: 18px;
+}
+/* -------------About us----------------- */
+
+.about{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+
+}
+.about .image{
+    height: 100vh;
+    width: 50vw;
+    overflow: hidden;
+}
+.about .image img{
+    height: 100%;
+    width: 100%;
+}
+.about .description{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.about .description h3{
+    font-size: 36px;
+    font-weight: 300;
+}
+.about .description p{
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.356);
+    font-size: 18px;
+}
+.btn{
+    margin: 25px;
+    background-color: transparent;
+    border: 1px solid #000; 
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+/* -------------Promises----------------- */
+.promisec{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 300px;
+    background: #f1d3ab;
+    text-align: center;
+    padding-top: 15px;
+}
+.promisec h1{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.promisec .promises{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+}
+.promises .promise{
+    width: calc(100%/4 );
+} 
+.promises .promise i{
+    font-size: 52px;
+    color: #000000a2;
+    margin-bottom: 25px;
+}
+.promises .promise p{
+    font-size: 18px;
+    color: #AF8260;
+}
+/* -------------Models----------------- */
+.models{
+     text-align: center;
+     margin-bottom: 20px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* gap:px ; */
+    margin-bottom: 25px;
+   
+}
+.line .model{
+    width: calc(100% /4 - 20px);
+    text-align: left;
+}
+.line .model img{
+    width: 100%;
+    height: 450px;
+
+}
+.line .model .name{
+    font-size: 12px;
+}
+.line .model .price{
+    font-size: 18px;
+}
+.models a{
+    text-decoration: underline;
+}
+/* -------------Collection----------------- */
+.collectionsec{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.collectionsec h1{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.collection{
+    text-align: left;
+}
+.collection img{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+}
+.collection a{
+    font-size: 18px;
+    
+    padding-left: 10px;
+}
+.collection a:hover{
+    text-decoration: underline;
+}
+/* -------------Footer----------------- */
+
